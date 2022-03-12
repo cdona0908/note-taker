@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {filterByQuery} = require('../../lib/notes');
+const {filterByQuery, findById} = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
 
 
@@ -14,6 +14,15 @@ router.get('/notes', (req, res) => {
 
 
 //get specific notes by id
+router.get('/notes/:id', (req, res) => {
+    const result = findById(req.params.id, notes);    
+    //if no record exist for that note return error 400
+    if(result){
+        res.json(result);
+    } else {
+        res.send(404);
+    }
+});
 
 
 

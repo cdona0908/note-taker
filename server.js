@@ -1,6 +1,6 @@
 //use express for building API endpoints to accept requests and send back a response
 const express = require('express');
-//use heroku port or 3001 
+//use heroku's default port or port 3001 
 const PORT = process.env.PORT || 3001;
 //instantiate the server
 const app = express();
