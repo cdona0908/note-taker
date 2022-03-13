@@ -14,6 +14,16 @@
       "title": "Test Title 4",
       "text": "Test text 4",
       "id": "2"
+    },
+    {
+      "title": "test 5",
+      "text": "this is a new note\n",
+      "id": "3"
+    },
+    {
+      "title": "Another note",
+      "text": "this is another test 6",
+      "id": "4"
     }
   ]
 }

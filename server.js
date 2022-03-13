@@ -6,17 +6,18 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 //use routes 
 const apiRoutes = require ('./routes/apiRoutes');
-//const htmlRoutes = require ('./routes/htmlRoutes');
+const htmlRoutes = require ('./routes/htmlRoutes');
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+//middleware to make CSS ans Script files available by making the static resources
 app.use(express.static('public'));
 
 // Use apiRoutes
 app.use('/api', apiRoutes);
-//app.use('/', htmlRoutes);
+app.use('/', htmlRoutes);
 
 
 //add listen method to make our server listen for requests
