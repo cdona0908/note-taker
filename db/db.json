@@ -39,6 +39,21 @@
       "title": "New UUID version",
       "text": "Adding new note with UUID new Version",
       "id": "66bdf9be-4924-4389-8974-16d737aa0be4"
+    },
+    {
+      "title": "New UUID version",
+      "text": "Adding new note with UUID new Version",
+      "id": "8"
+    },
+    {
+      "title": "New UUID version 2",
+      "text": "Adding new note with UUID new Version 2",
+      "id": "742be851-0865-4432-a19c-eb5bcec56cc0"
+    },
+    {
+      "title": "another note",
+      "text": "another note",
+      "id": "c1421703-c706-4732-aacc-6692156ce0ec"
     }
   ]
 }
