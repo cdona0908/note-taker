@@ -1,6 +1,7 @@
 const router = require('express').Router();
-const {filterByQuery, findById, createNewNote, validateNote} = require('../../lib/notes');
+const {filterByQuery, findById, createNewNote, validateNote, deleteNote} = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
+const { v4: uuidv4 } = require('uuid');
 
 
 //get all notes
@@ -26,8 +27,8 @@ router.get('/notes/:id', (req, res) => {
 
 // add notes to db
 router.post('/notes', (req, res) => {
-    // set id based on what the next index of the array will be so there are no duplicate ids
-    req.body.id = notes.length.toString();
+    // generate a unique id using the uuid package
+    req.body.id = uuidv4();
     //if any data in req.body is incorrect, send 400 error back
     if (!validateNote(req.body)){
         res.status(400).send('The note is not properly formatted.');
@@ -36,6 +37,11 @@ router.post('/notes', (req, res) => {
         const note = createNewNote(req.body, notes);        
         res.json(note);
     }    
+});
+
+//delete note by id
+router.delete('/notes/:id', (req, res) =>{
+
 });
 
 
