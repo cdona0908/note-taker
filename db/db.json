@@ -1,59 +1,15 @@
 {
   "notes": [
+    
     {
-      "id": "0",
-      "title": "Test Title 1",
-      "text": "Test text 1"
-    },
-    {
-      "id": "1",
-      "title": "Test Title 2",
-      "text": "Test text 2"
-    },
-    {
-      "title": "Test Title 4",
-      "text": "Test text 4",
-      "id": "2"
-    },
-    {
-      "title": "test 5",
-      "text": "this is a new note\n",
-      "id": "3"
-    },
-    {
-      "title": "Another note",
-      "text": "this is another test 6",
-      "id": "4"
-    },
-    {
-      "title": "Uniq ID",
+      "title": "Testing Note",
       "text": "New note with uniq id",
       "id": "0341eb7f-fe72-474b-b682-8e6422747dad"
     },
     {
-      "title": "Another Uniq ID",
+      "title": " Testing Another Uniq ID Note",
       "text": "Another note with uniq id",
       "id": "f17de2bc-ed41-4f2c-892e-a5e69aca1afe"
-    },
-    {
-      "title": "New UUID version",
-      "text": "Adding new note with UUID new Version",
-      "id": "66bdf9be-4924-4389-8974-16d737aa0be4"
-    },
-    {
-      "title": "New UUID version",
-      "text": "Adding new note with UUID new Version",
-      "id": "8"
-    },
-    {
-      "title": "New UUID version 2",
-      "text": "Adding new note with UUID new Version 2",
-      "id": "742be851-0865-4432-a19c-eb5bcec56cc0"
-    },
-    {
-      "title": "another note",
-      "text": "another note",
-      "id": "c1421703-c706-4732-aacc-6692156ce0ec"
     }
   ]
 }
