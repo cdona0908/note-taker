@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {filterByQuery, findById, createNewNote, validateNote} = require('../../lib/notes');
+const {filterByQuery, createNewNote, validateNote} = require('../../lib/notes');
 const { notes } = require('../../db/db.json');
 const { v4: uuidv4 } = require('uuid');
 
@@ -13,17 +13,6 @@ router.get('/notes', (req, res) => {
     res.json(results);
 });
 
-
-//get specific notes by id
-router.get('/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);    
-    //if no record exist for that note return error 400
-    if(result){
-        res.json(result);
-    } else {
-        res.send(404);
-    }
-});
 
 // add notes to db
 router.post('/notes', (req, res) => {
@@ -40,9 +29,9 @@ router.post('/notes', (req, res) => {
 });
 
 //delete note by id
-router.delete('/notes/:id', (req, res) =>{
+// router.delete('/notes/:id', (req, res) =>{
 
-});
+// });
 
 
 module.exports = router;
